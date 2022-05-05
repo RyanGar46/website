@@ -1,7 +1,15 @@
 <script setup>
   console.log("Hi this is a test message");
+</script>
 
-  let buttonClicks = 0;
+<script>
+  export default {
+    data() {
+      return {
+        buttonClicks: 0
+      }
+    }
+  }
 </script>
 
 <template>
@@ -11,7 +19,7 @@
       <h2>Everything here is temporary</h2>
     </header>
     <div>{{ buttonClicks }}</div>
-    <button>Click Me!</button>
+    <button @click="buttonClicks++;">Click Me!</button>
     <div>
       <div>Some Text</div>
       <img src="" alt="Wide Image">
