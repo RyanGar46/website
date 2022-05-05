@@ -18,7 +18,7 @@
       <h1>Ryan Garret's Website</h1>
       <h2>Everything here is temporary</h2>
     </header>
-    <div>{{ buttonClicks }}</div>
+    <div class="test">{{ buttonClicks }}</div>
     <button @click="buttonClicks++;">Click Me!</button>
     <div>
       <div>Some Text</div>
@@ -31,3 +31,9 @@
     </p>
   </div>
 </template>
+
+<style lang="scss">
+  .test {
+    color: red;
+  }
+</style>
