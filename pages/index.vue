@@ -13,27 +13,61 @@
 </script>
 
 <template>
-  <div>
-    <header>
-      <h1>Ryan Garret's Website</h1>
-      <h2>Everything here is temporary</h2>
-    </header>
-    <div class="test">{{ buttonClicks }}</div>
-    <button @click="buttonClicks++;">Click Me!</button>
-    <div>
-      <div>Some Text</div>
-      <img src="" alt="Wide Image">
-      <div>Description</div>
+  <div class="page">
+    <div class="content">
+      <header>
+        <h1>Ryan Garrett's Website</h1>
+        <h2>Everything here is temporary</h2>
+      </header>
+      <div>{{ buttonClicks }}</div>
+      <button @click="buttonClicks++;">Click Me!</button>
+      <div>
+        <div>Some Text</div>
+        <img src="" alt="Wide Image">
+        <div>Description</div>
+      </div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
+        laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
+        laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
+        laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
+        laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
+        laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
+        laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
+        laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
+      </p>
     </div>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
-      laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
-    </p>
   </div>
 </template>
 
-<style lang="scss">
-  .test {
-    color: red;
+<style lang="scss" scoped>
+  .page {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+  }
+
+  .content {
+    width: min(75rem, 100%);
+    background-color: $color-content-background;
+    padding: 16px;
   }
 </style>
