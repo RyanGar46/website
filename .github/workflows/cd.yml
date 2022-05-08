@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup node env
         uses: actions/setup-node@v2.1.2
