@@ -21,11 +21,9 @@
       </header>
       <div>{{ buttonClicks }}</div>
       <button @click="buttonClicks++;">Click Me!</button>
-      <div>
-        <div>Some Text</div>
-        <img src="" alt="Wide Image">
-        <div>Description</div>
-      </div>
+      <MediaImageWide
+        src="https://media.forgecdn.net/attachments/429/82/2021-12-18_20.png"
+        alt="A wide example image"/>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
         laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
