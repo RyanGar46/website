@@ -1,17 +1,19 @@
 <script>
   export default {
     props: {
+      title: String,
+      description: String,
       src: String,
       alt: String
-    }
+    },
   }
 </script>
 
 <template>
   <div class="wide-image">
-    <h2>Some Text</h2>
-    <img :src="src" :alt="alt">
-    <div>Description</div>
+    <h2 v-if="title != undefined">{{title}}</h2>
+    <img :src="src" :alt="alt != undefined ? alt : description">
+    <div v-if="description != undefined">{{description}}</div>
   </div>
 </template>
 

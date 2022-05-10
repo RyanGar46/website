@@ -1,28 +1,31 @@
 <template>
   <div class="nav-bar">
+    <NuxtLink href="/">Home</NuxtLink>
     <div>Dropdown</div>
     <div>Dropdown</div>
-    <div>Button</div>
-    <div>Button</div>
-    <div>Button</div>
-    <div>Button</div>
   </div>
 </template>
 
 <style lang="scss" scoped>
   .nav-bar {
-    background-color: $color-nav-bar-background;
-    display: flex;
-    position: sticky;
     top: 0;
-    user-select: none;
+    position: sticky;
+    display: flex;
+    background-color: $color-nav-bar-background;
     color: $color-text-button;
+    user-select: none;
     font-weight: bold;
     font-size: $size-text-button;
 
-    div {
+    
+    div, a {
       margin: 4px;
       padding: 4px;
+    }
+
+    a {
+      color: $color-text-button;
+      text-decoration: none;
     }
   }
 </style>

@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt'
+import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -14,8 +14,11 @@ export default defineNuxtConfig({
       },
     },
   },
-  target: "static",
+  target: "server",
   router: {
     base: "/website/"
+  },
+  build: {
+    publicPath: "/website/_nuxt/"
   }
-})
+});

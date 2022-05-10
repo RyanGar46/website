@@ -1,7 +1,3 @@
-<script setup>
-  console.log("Hi this is a test message");
-</script>
-
 <script>
   export default {
     data() {
@@ -22,8 +18,11 @@
       <div>{{ buttonClicks }}</div>
       <button @click="buttonClicks++;">Click Me!</button>
       <MediaImageWide
+        title="This is an image"
+        description="A wide example image"
         src="https://media.forgecdn.net/attachments/429/82/2021-12-18_20.png"
-        alt="A wide example image"/>
+        alt="This is the alt of the image"
+      />
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto aut ad explicabo voluptatum consequuntur doloremque? Reiciendis quam, quis eveniet 
         laudantium repellendus nihil eius quidem, cupiditate sed, provident accusamus atque.
